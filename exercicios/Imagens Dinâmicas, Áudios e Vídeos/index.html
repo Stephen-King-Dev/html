@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmete aumente e diminua o tamanho do seu navegador</p>
+
+    <picture><!--A ordem deve ser do menor para o maior-->
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio controls loop preload="metadata">
+        <source src="midia/4 Raws - EsDeeKid (1).mp3" type="audio/mpeg">
+        <source src="midia/4 Raws - EsDeeKid (1)WAV.wav" type="audio/wav">
+    </audio>
+    <h1>Vídeos Hospedados localmente</h1>
+    <p>Vamos adicionar vídeos ao Site</p>
+    <video width="500" controls poster="images/foto-p.png" loop>
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/viideo.mkv" type="video/mkv">
+        <source src="midia/video.webm" type="video/webm">
+    </video>
+    <h1>Vídeos hospedados</h1>
+    <h3>MJF x Kenny Omega - AEW World Championship</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KU30y-Lk7-o?si=cuICSjZ0lSda6C99" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
